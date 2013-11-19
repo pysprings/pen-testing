@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block body %}
+    Welcome, {{user[1]}}
+    <div>
+        <ul>
+            <li><a href="/reset/{{user[0]}}">Reset Password</a></li>
+        </ul>
+    </div>
+{% endblock %}

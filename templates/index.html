@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block body %}
+    Welcome to HealthCare.py!
+    {% if session.logged_in %}
+    <div class=metanav>
+        <a href="/u/{{session.username}}">Edit Account Settings</a>
+    </div>
+    {% endif %}
+{% endblock %}
